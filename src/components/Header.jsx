@@ -82,10 +82,21 @@ const Header = () => {
       <div className="bg-gradient-to-r from-white to-gray-50 border-b border-gray-200 py-5 shadow-sm">
         <div className="container-custom">
           <div className="flex items-center justify-between px-4">
-            <div className="flex items-center">
-              <a href="/" onClick={(e) => { e.preventDefault(); navigate('/') }} className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black bg-gradient-to-r from-primary-600 via-accent-600 to-primary-600 bg-clip-text text-transparent bg-[length:200%_auto] hover:bg-[position:100%_center] transition-all duration-500">
-                <span className="hidden sm:inline">NVNS Software Solutions</span>
-                <span className="sm:hidden">NVNS</span>
+            <div className="flex items-center gap-3">
+              <a 
+                href="/" 
+                onClick={(e) => { e.preventDefault(); navigate('/') }} 
+                className="flex items-center gap-3 hover:opacity-80 transition-opacity"
+              >
+                <img 
+                  src="/nvns.png" 
+                  alt="NVNS Software Solutions Logo" 
+                  className="h-10 sm:h-12 md:h-14 w-auto object-contain"
+                />
+                <span className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-black bg-gradient-to-r from-primary-600 via-accent-600 to-primary-600 bg-clip-text text-transparent bg-[length:200%_auto] hover:bg-[position:100%_center] transition-all duration-500">
+                  <span className="hidden sm:inline">NVNS Software Solutions</span>
+                  <span className="sm:hidden">NVNS</span>
+                </span>
               </a>
             </div>
             <div className="hidden md:flex items-center gap-3">
