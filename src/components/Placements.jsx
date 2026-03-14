@@ -87,7 +87,7 @@ const Placements = () => {
 
   const benefits = [
     '100% Placement Assistance',
-    '500+ Partner Companies',
+    '50+ Partner Companies',
     'Dedicated Placement Officer',
     'Interview Preparation Sessions',
     'Resume Building Support',
