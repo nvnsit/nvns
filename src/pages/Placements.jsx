@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { Briefcase, MapPin, DollarSign, Building2, TrendingUp, CheckCircle, ArrowRight, Users, Phone, Mail, Calendar, Target, Award, FileText, MessageCircle } from 'lucide-react'
 import { openWhatsApp } from '../utils/whatsapp'
+import { CompanyLogo } from '../utils/companyLogos'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import WhatsAppFloat from '../components/WhatsAppFloat'
@@ -145,7 +146,7 @@ const Placements = () => {
       image: 'RK',
     },
     {
-      name: 'Priya Sharma',
+      name: 'Priya G',
       course: 'Data Science',
       company: 'Infosys',
       salary: '7 LPA',
@@ -155,7 +156,7 @@ const Placements = () => {
       image: 'PS',
     },
     {
-      name: 'Amit Patel',
+      name: 'Arjun M',
       course: 'DevOps',
       company: 'Accenture',
       salary: '8 LPA',
@@ -185,7 +186,7 @@ const Placements = () => {
       image: 'KK',
     },
     {
-      name: 'Anjali Verma',
+      name: 'Anjali Varma',
       course: 'Cyber Security',
       company: 'Cisco',
       salary: '9 LPA',
@@ -195,7 +196,7 @@ const Placements = () => {
       image: 'AV',
     },
     {
-      name: 'Rahul Singh',
+      name: 'Rahul D',
       course: 'DevOps & Cloud',
       company: 'Amazon',
       salary: '11 LPA',
@@ -205,7 +206,7 @@ const Placements = () => {
       image: 'RS',
     },
     {
-      name: 'Meera Nair',
+      name: 'Meera K',
       course: 'Data Science',
       company: 'IBM',
       salary: '8.5 LPA',
@@ -225,7 +226,7 @@ const Placements = () => {
       image: 'VR',
     },
     {
-      name: 'Divya Patel',
+      name: 'Divya A',
       course: 'AI Testing',
       company: 'HCL',
       salary: '7 LPA',
@@ -237,14 +238,14 @@ const Placements = () => {
   ]
 
   const recentPlacements = [
-    { name: 'Arjun Mehta', course: 'Full Stack Java', company: 'TCS', salary: '6.5 LPA', date: 'Nov 2024' },
+    { name: 'Arjun S', course: 'Full Stack Java', company: 'TCS', salary: '6.5 LPA', date: 'Nov 2024' },
     { name: 'Kavya Iyer', course: 'Data Science', company: 'Infosys', salary: '7.2 LPA', date: 'Nov 2024' },
-    { name: 'Rohit Desai', course: 'DevOps', company: 'Accenture', salary: '8.5 LPA', date: 'Nov 2024' },
-    { name: 'Shreya Joshi', course: 'Full Stack Python', company: 'Cognizant', salary: '7.8 LPA', date: 'Oct 2024' },
-    { name: 'Nikhil Agarwal', course: 'Gen AI', company: 'Microsoft', salary: '13 LPA', date: 'Oct 2024' },
+    { name: 'Rohit D', course: 'DevOps', company: 'Accenture', salary: '8.5 LPA', date: 'Nov 2024' },
+    { name: 'Shreya A', course: 'Full Stack Python', company: 'Cognizant', salary: '7.8 LPA', date: 'Oct 2024' },
+    { name: 'Nikhil V', course: 'Gen AI', company: 'Microsoft', salary: '13 LPA', date: 'Oct 2024' },
     { name: 'Pooja Reddy', course: 'Cyber Security', company: 'Cisco', salary: '9.5 LPA', date: 'Oct 2024' },
     { name: 'Aditya Sharma', course: 'Cloud Engineering', company: 'Amazon', salary: '12 LPA', date: 'Sep 2024' },
-    { name: 'Neha Gupta', course: 'Data Science', company: 'IBM', salary: '8.8 LPA', date: 'Sep 2024' },
+    { name: 'Neha G', course: 'Data Science', company: 'IBM', salary: '8.8 LPA', date: 'Sep 2024' },
   ]
 
   const placementByDomain = [
@@ -434,7 +435,9 @@ const Placements = () => {
                       {company.location}
                     </div>
                   </div>
-                  <Building2 className="h-8 w-8 text-primary-600" />
+                  <div className="h-12 w-24 flex items-center justify-center">
+                    <CompanyLogo companyName={company.name} className="h-10 w-auto object-contain max-w-full" />
+                  </div>
                 </div>
                 <div className="border-t border-gray-100 pt-4 mb-4">
                   <p className="text-sm text-gray-600 mb-2 font-medium">Open Roles:</p>
@@ -547,7 +550,9 @@ const Placements = () => {
                 style={{ transitionDelay: `${index * 100}ms` }}
               >
                 <div className="flex items-center justify-between mb-4">
-                  <Building2 className="h-8 w-8 text-primary-600" />
+                  <div className="h-10 w-20 flex items-center justify-center">
+                    <CompanyLogo companyName={company.name} className="h-8 w-auto object-contain max-w-full" />
+                  </div>
                   <span className="text-2xl font-bold text-primary-600">{company.placements}</span>
                 </div>
                 <h4 className="font-bold text-gray-900 text-lg mb-2">{company.name}</h4>
@@ -594,7 +599,9 @@ const Placements = () => {
                 </div>
                 <div className="mb-4 space-y-2">
                   <div className="flex items-center gap-2">
-                    <Building2 className="h-4 w-4 text-primary-600" />
+                    <div className="h-5 w-12 flex items-center justify-center">
+                      <CompanyLogo companyName={story.company} className="h-4 w-auto object-contain max-w-full" />
+                    </div>
                     <span className="font-semibold text-gray-900 text-sm">{story.company}</span>
                     <span className="text-xs text-gray-500">• {story.location}</span>
                   </div>

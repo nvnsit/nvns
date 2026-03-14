@@ -7,6 +7,16 @@ const CourseCard = ({ course, showBatchInfo = false }) => {
   const navigate = useNavigate()
   const [showEnrollmentForm, setShowEnrollmentForm] = useState(false)
 
+  // Get course image path: use explicit course.image if provided, otherwise derive from slug/id
+  const getCourseImageSrc = () => {
+    if (course.image) return course.image
+    if (course.slug) return `/courses/${course.slug}.png`
+    if (course.id) return `/courses/${course.id}.png`
+    return null
+  }
+
+  const imageSrc = getCourseImageSrc()
+
   const handleShare = (e) => {
     e.stopPropagation()
     if (navigator.share) {
@@ -38,6 +48,21 @@ const CourseCard = ({ course, showBatchInfo = false }) => {
         <div className="absolute inset-0 bg-gradient-to-br from-primary-50/0 via-accent-50/0 to-primary-50/0 group-hover:from-primary-50/50 group-hover:via-accent-50/30 group-hover:to-primary-50/50 transition-all duration-500 pointer-events-none"></div>
 
       <div className="p-4 sm:p-5 md:p-7 relative z-10 flex flex-col flex-grow">
+        {/* Course Image */}
+        {imageSrc && (
+          <div className="w-full h-32 sm:h-36 md:h-40 mb-4 rounded-xl overflow-hidden bg-gray-50 flex items-center justify-center">
+            <img
+              src={imageSrc}
+              alt={course.title}
+              className="w-full h-full object-cover"
+              onError={(e) => {
+                // Hide broken image but keep placeholder background
+                e.currentTarget.style.display = 'none'
+              }}
+            />
+          </div>
+        )}
+
         {/* Header */}
         <div className="mb-4">
           <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 group-hover:text-primary-600 transition-colors line-clamp-2 min-h-[3rem] sm:min-h-[3.5rem]">

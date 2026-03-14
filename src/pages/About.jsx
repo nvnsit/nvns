@@ -10,8 +10,8 @@ const About = () => {
   }, [])
   const stats = [
     { icon: <Award className="h-8 w-8" />, number: '5+', label: 'Years of Excellence' },
-    { icon: <Users className="h-8 w-8" />, number: '100K+', label: 'Students Trained' },
-    { icon: <Briefcase className="h-8 w-8" />, number: '2K+', label: 'Students Placed' },
+    { icon: <Users className="h-8 w-8" />, number: '5K+', label: 'Students Trained' },
+    { icon: <Briefcase className="h-8 w-8" />, number: '5K+', label: 'Students Placed' },
     { icon: <Target className="h-8 w-8" />, number: '100%', label: 'Placement Rate' },
   ]
 

@@ -2,13 +2,13 @@ import React from 'react'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
 import Stats from '../components/Stats'
-import TrendingCourses from '../components/TrendingCourses'
 import FeaturedCourses from '../components/FeaturedCourses'
 import LearningJourney from '../components/LearningJourney'
 import Services from '../components/Services'
 import Placements from '../components/Placements'
 import Testimonials from '../components/Testimonials'
 import Contact from '../components/Contact'
+import FAQ from '../components/FAQ'
 import Footer from '../components/Footer'
 import WhatsAppFloat from '../components/WhatsAppFloat'
 
@@ -19,7 +19,6 @@ function Home() {
       <Hero />
       <Stats />
       <section id="courses">
-        <TrendingCourses />
         <FeaturedCourses />
       </section>
       <LearningJourney />
@@ -29,6 +28,7 @@ function Home() {
         <Testimonials />
       </section>
       <Contact />
+      <FAQ />
       <Footer />
       <WhatsAppFloat />
     </div>

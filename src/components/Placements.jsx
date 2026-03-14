@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react'
 import { Briefcase, MapPin, DollarSign, Building2, TrendingUp, CheckCircle, ArrowRight, Users } from 'lucide-react'
 import { useNavigate } from 'react-router-dom'
 import { openWhatsApp } from '../utils/whatsapp'
+import { CompanyLogo } from '../utils/companyLogos'
 
 const Placements = () => {
   const navigate = useNavigate()
@@ -180,7 +181,9 @@ const Placements = () => {
                 className={`bg-white rounded-xl p-4 shadow-md hover:shadow-lg transition-all duration-300 text-center transform ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}
                 style={{ transitionDelay: `${index * 100}ms` }}
               >
-                <Building2 className="h-8 w-8 text-primary-600 mx-auto mb-2" />
+                <div className="h-12 flex items-center justify-center mb-2">
+                  <CompanyLogo companyName={company.name} className="h-8 w-auto object-contain max-w-full" />
+                </div>
                 <h4 className="font-bold text-gray-900 text-sm">{company.name}</h4>
               </div>
             ))}

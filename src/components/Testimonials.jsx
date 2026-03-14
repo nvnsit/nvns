@@ -29,7 +29,7 @@ const Testimonials = () => {
   }, [])
   const testimonials = [
     {
-      name: 'Steve Purimitla',
+      name: 'Raja Purimitla',
       course: 'Software Testing',
       rating: 5,
       text: 'I have taken the classes in this institution for software testing, it has been very informative and clear cut guidance into how we can enter into the field of Software testing and also Development. The teaching is just so clear and to the point, anyone looking for courses in Full Stack Development or other software Development Courses training institute is the perfect place to join.'
@@ -59,7 +59,7 @@ const Testimonials = () => {
       text: 'Recommend to Join Testing Internship Learn from the live IT Environment. They give real time scenarios with Live project hands-on experience. The instructor has given us Confidence to crack the interview.'
     },
     {
-      name: 'Manya Khanna',
+      name: 'Manoj Reddy',
       course: 'Python Workshop',
       rating: 5,
       text: 'Very detailed workshop. Absolutely loved it!!! This workshop is very interesting and helpful for beginners. I liked the way they explained.'

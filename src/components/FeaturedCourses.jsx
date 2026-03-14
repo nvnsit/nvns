@@ -39,131 +39,204 @@ const FeaturedCourses = () => {
     { id: 'testing', name: 'Testing' }
   ]
   
+  // Courses offered by NVNS – kept in sync with marketing content
   const courses = [
     {
-      slug: 'fullstack-java',
-      title: 'Full-Stack Java',
-      subtitle: 'with React JS + AWS + DSA + AI',
-      duration: '5 Months',
-      students: '2,500+',
-      rating: 4.8,
-      reviews: 500,
-      description: 'Master Java, Spring Boot, Microservices, React, and AWS deployment. Industry-ready skills with real projects.',
-      skills: ['Spring Boot', 'Microservices', 'AWS', 'React', 'Java'],
-      price: '₹35,000',
-      badge: 'Most Popular',
-      category: 'fullstack',
-      batchInfo: {
-        startDate: '2 Mar 2026',
-        trainer: 'Mr. Kishan B'
-      }
-    },
-    {
-      slug: 'data-science',
-      title: 'Full Stack Data Science & AI',
-      subtitle: 'Complete Data Science Program',
+      slug: 'snowflake-snowpark-dbt',
+      title: 'Snowflake + Snowpark + DBT',
+      subtitle: 'with Real Time Project Implementation',
       duration: '4 Months',
-      students: '3,000+',
-      rating: 5.0,
-      reviews: 2500,
-      description: 'Master data science with Python, machine learning, statistical analysis, and data visualization.',
-      skills: ['Python', 'Machine Learning', 'Statistics', 'Data Visualization'],
+      students: '500+',
+      rating: 4.8,
+      reviews: 200,
+      description: 'End-to-end Snowflake data engineering with Snowpark and DBT, focused on real-time project implementation.',
+      skills: ['Snowflake', 'Snowpark', 'DBT', 'SQL'],
       price: '₹45,000',
       badge: 'High Demand',
       category: 'data',
       batchInfo: {
         startDate: '2 Mar 2026',
-        trainer: 'Mr. Prakash Senapathi'
+        trainer: 'Expert Trainer'
       }
     },
     {
-      slug: 'fullstack-python',
-      title: 'Full Stack Python',
-      subtitle: 'End-to-End Development',
+      slug: 'aws-data-engineer',
+      title: 'AWS Data Engineer',
+      subtitle: 'with Real Time Project Implementation',
+      duration: '4 Months',
+      students: '800+',
+      rating: 4.9,
+      reviews: 350,
+      description: 'Design and build data pipelines on AWS with hands-on, real-time project implementation.',
+      skills: ['AWS', 'Data Pipelines', 'ETL', 'Redshift'],
+      price: '₹50,000',
+      badge: 'High Demand',
+      category: 'data',
+      batchInfo: {
+        startDate: '5 Mar 2026',
+        trainer: 'Expert Trainer'
+      }
+    },
+    {
+      slug: 'java-fullstack',
+      title: 'Java Full Stack',
+      subtitle: 'with Real Time Project Implementation',
+      duration: '5 Months',
+      students: '2,500+',
+      rating: 4.8,
+      reviews: 500,
+      description: 'Master Java, Spring Boot, React, and cloud deployment with full-stack real time project implementation.',
+      skills: ['Java', 'Spring Boot', 'React', 'AWS'],
+      price: '₹35,000',
+      badge: 'Most Popular',
+      category: 'fullstack',
+      batchInfo: {
+        startDate: '10 Mar 2026',
+        trainer: 'Senior Java Trainer'
+      }
+    },
+    {
+      slug: 'python-fullstack',
+      title: 'Python Full Stack',
+      subtitle: 'with Real Time Project Implementation',
       duration: '5 Months',
       students: '1,800+',
-      rating: 5.0,
-      reviews: 800,
-      description: 'Master full-stack development with Python, Django, React, and cloud deployment.',
-      skills: ['Python', 'Django', 'React', 'PostgreSQL', 'AWS'],
+      rating: 4.9,
+      reviews: 450,
+      description: 'Full-stack development with Python, Django, React and cloud, driven by real time projects.',
+      skills: ['Python', 'Django', 'React', 'PostgreSQL'],
       price: '₹35,000',
       badge: 'Trending',
       category: 'fullstack',
       batchInfo: {
-        startDate: '26 Feb 2026',
-        trainer: 'Mr. K V Rao'
+        startDate: '12 Mar 2026',
+        trainer: 'Senior Python Trainer'
       }
     },
     {
-      slug: 'ai-testing',
-      title: 'AI Testing',
-      subtitle: 'Test AI Systems Effectively',
+      slug: 'dotnet-fullstack',
+      title: '.NET Full Stack',
+      subtitle: 'with Real Time Project Implementation',
       duration: '5 Months',
-      students: '3,000+',
-      rating: 4.9,
-      reviews: 2500,
-      description: 'Learn to evaluate AI models, identify bugs, and maintain the ethical running of AI systems',
-      skills: ['AI Testing', 'Model Evaluation', 'Bug Detection', 'Ethical AI'],
-      price: '₹40,000',
-      badge: 'New',
-      category: 'testing',
-      batchInfo: {
-        startDate: '2 Mar 2026',
-        trainer: 'Mr. Vamshi Mohan'
-      }
-    },
-    {
-      slug: 'gen-ai-development',
-      title: 'Generative AI & Agentic AI',
-      subtitle: 'with Python',
-      duration: '3 Months',
       students: '1,200+',
-      rating: 4.6,
-      reviews: 1400,
-      description: 'Deep dive into Neural Networks, NLP, Computer Vision, LLMs, and Generative AI technologies.',
-      skills: ['Deep Learning', 'NLP', 'LLMs', 'Computer Vision'],
-      price: '₹60,000',
-      badge: 'Cutting Edge',
-      category: 'ai',
+      rating: 4.7,
+      reviews: 300,
+      description: 'Build modern web applications using .NET, SQL Server, and frontend frameworks with real time projects.',
+      skills: ['.NET', 'C#', 'SQL Server', 'Web API'],
+      price: '₹38,000',
+      badge: 'Popular',
+      category: 'fullstack',
       batchInfo: {
-        startDate: '27 Feb 2026',
-        trainer: 'Mr. Shiva Rama Krishna'
-      }
-    },
-    {
-      slug: 'devops-cloud-engineering',
-      title: 'DevOps with Multi Cloud',
-      subtitle: 'Master CI/CD and Cloud Infrastructure',
-      duration: '5 Months',
-      students: '2,800+',
-      rating: 5.0,
-      reviews: 1400,
-      description: 'Master CI/CD pipelines, Docker, Kubernetes, AWS, Azure, and infrastructure automation.',
-      skills: ['Docker', 'Kubernetes', 'AWS', 'Azure', 'Terraform'],
-      price: '₹60,000',
-      badge: 'High Demand',
-      category: 'cloud',
-      batchInfo: {
-        startDate: '27 Feb 2026',
-        trainer: 'Mr. Riyaz'
+        startDate: '15 Mar 2026',
+        trainer: '.NET Expert'
       }
     },
     {
       slug: 'cyber-security',
-      title: 'Cyber Security & Ethical Hacking',
-      subtitle: 'Protect Digital Assets',
+      title: 'Cyber Security',
+      subtitle: 'with Real Time Project Implementation',
       duration: '4 Months',
       students: '1,200+',
       rating: 4.7,
       reviews: 600,
-      description: 'Learn to protect systems, networks, and data from cyber threats. Master ethical hacking and security analysis.',
+      description: 'Learn to protect systems, networks, and data from cyber threats with real-world scenarios.',
       skills: ['Ethical Hacking', 'Network Security', 'Penetration Testing'],
       price: '₹40,000',
       badge: 'Fast Growing',
       category: 'cloud',
       batchInfo: {
-        startDate: '10 Mar 2026',
-        trainer: 'Expert Trainer'
+        startDate: '18 Mar 2026',
+        trainer: 'Security Expert'
+      }
+    },
+    {
+      slug: 'data-science-ai-genai',
+      title: 'Data Science & AI / Gen AI',
+      subtitle: 'with Real Time Project Implementation',
+      duration: '5 Months',
+      students: '3,000+',
+      rating: 5.0,
+      reviews: 2500,
+      description: 'Comprehensive Data Science, AI, Generative AI and Agentic AI with end-to-end project implementation.',
+      skills: ['Data Science', 'Machine Learning', 'Gen AI', 'Agentic AI'],
+      price: '₹60,000',
+      badge: 'Cutting Edge',
+      category: 'ai',
+      batchInfo: {
+        startDate: '20 Mar 2026',
+        trainer: 'AI Specialist'
+      }
+    },
+    {
+      slug: 'manual-automation-testing',
+      title: 'Manual & Automation Testing',
+      subtitle: 'with Real Time Project Implementation',
+      duration: '4 Months',
+      students: '2,000+',
+      rating: 4.8,
+      reviews: 900,
+      description: 'Learn manual testing and automation tools end-to-end with real time project implementation.',
+      skills: ['Manual Testing', 'Selenium', 'Test Automation'],
+      price: '₹30,000',
+      badge: 'High Demand',
+      category: 'testing',
+      batchInfo: {
+        startDate: '22 Mar 2026',
+        trainer: 'QA Expert'
+      }
+    },
+    {
+      slug: 'aws-devops',
+      title: 'AWS & DevOps',
+      subtitle: 'with Real Time Project Implementation',
+      duration: '4 Months',
+      students: '2,800+',
+      rating: 4.9,
+      reviews: 1400,
+      description: 'Master AWS cloud and DevOps tools with hands-on CI/CD and infrastructure automation.',
+      skills: ['AWS', 'Docker', 'Kubernetes', 'CI/CD'],
+      price: '₹55,000',
+      badge: 'High Demand',
+      category: 'cloud',
+      batchInfo: {
+        startDate: '24 Mar 2026',
+        trainer: 'DevOps Expert'
+      }
+    },
+    {
+      slug: 'azure-cloud-azure-devops',
+      title: 'Azure Cloud & Azure DevOps',
+      subtitle: 'with Real Time Project Implementation',
+      duration: '4 Months',
+      students: '1,500+',
+      rating: 4.7,
+      reviews: 700,
+      description: 'End-to-end training on Azure Cloud and Azure DevOps pipelines with project-based learning.',
+      skills: ['Azure', 'Azure DevOps', 'Pipelines'],
+      price: '₹55,000',
+      badge: 'Popular',
+      category: 'cloud',
+      batchInfo: {
+        startDate: '26 Mar 2026',
+        trainer: 'Azure Expert'
+      }
+    },
+    {
+      slug: 'azure-ai-ml',
+      title: 'Azure AI & ML',
+      subtitle: 'with Real Time Project Implementation',
+      duration: '4 Months',
+      students: '900+',
+      rating: 4.8,
+      reviews: 400,
+      description: 'Build intelligent solutions using Azure AI and ML services with real time project implementation.',
+      skills: ['Azure AI', 'Azure ML', 'ML Pipelines'],
+      price: '₹60,000',
+      badge: 'Emerging',
+      category: 'ai',
+      batchInfo: {
+        startDate: '28 Mar 2026',
+        trainer: 'Azure AI Expert'
       }
     }
   ]
