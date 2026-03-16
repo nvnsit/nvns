@@ -259,8 +259,6 @@ const CourseDetail = () => {
                   ))}
                 </ul>
                 <div className="border-t pt-4">
-                  <p className="text-sm text-gray-600 mb-2">Course Fee</p>
-                  <p className="text-2xl font-bold text-primary-600 mb-4">{path.price}</p>
                   <button 
                     onClick={() => openEnrollmentForm(path)}
                     className="btn-primary w-full"

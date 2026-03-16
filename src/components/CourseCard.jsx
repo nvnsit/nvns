@@ -143,18 +143,6 @@ const CourseCard = ({ course, showBatchInfo = false }) => {
           </div>
         )}
 
-        {/* Price */}
-        {course.price && (
-          <div className="mb-5 pb-5 border-b-2 border-gradient-to-r from-primary-200 to-accent-200 mt-auto">
-            <div className="flex items-baseline gap-3 flex-wrap">
-              <span className="text-3xl font-black bg-gradient-to-r from-primary-600 to-accent-600 bg-clip-text text-transparent">{course.price}</span>
-              {course.originalPrice && (
-                <span className="text-sm text-gray-400 line-through font-semibold">{course.originalPrice}</span>
-              )}
-            </div>
-          </div>
-        )}
-
         {/* Actions */}
         <div className="flex gap-3 mt-auto">
           <button 

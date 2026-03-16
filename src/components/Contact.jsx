@@ -183,13 +183,13 @@ const Contact = () => {
   ]
 
   return (
-    <section ref={sectionRef} id="contact" className="section-padding bg-gradient-to-br from-primary-600 to-primary-800 text-white">
+    <section ref={sectionRef} id="contact" className="section-padding bg-white">
       <div className="container-custom">
         <div className={`text-center mb-12 scroll-fade-in ${isVisible ? 'visible' : ''}`}>
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-900">
             Talk to Our Experts
           </h2>
-          <p className="text-xl md:text-2xl text-primary-100">
+          <p className="text-xl md:text-2xl text-gray-600">
             Available 24/7 • Multiple Ways to Connect
           </p>
         </div>
@@ -199,7 +199,7 @@ const Contact = () => {
           {contactMethods.map((method, index) => (
             <div
               key={index}
-              className={`bg-white/10 backdrop-blur-sm rounded-xl p-4 md:p-6 text-center hover:bg-white/20 transition-all duration-300 cursor-pointer scroll-fade-in ${isVisible ? 'visible' : ''}`}
+              className={`bg-white rounded-xl border border-gray-200 p-4 md:p-6 text-center hover:shadow-md transition-all duration-300 cursor-pointer scroll-fade-in ${isVisible ? 'visible' : ''}`}
               style={{ animationDelay: `${index * 100}ms` }}
               onClick={method.onClick}
             >
@@ -209,7 +209,7 @@ const Contact = () => {
                 </div>
               </div>
               <h3 className="font-bold text-sm md:text-base mb-2">{method.title}</h3>
-              <p className="text-xs md:text-sm text-primary-100 mb-3 line-clamp-2">{method.value}</p>
+              <p className="text-xs md:text-sm text-gray-600 mb-3 line-clamp-2">{method.value}</p>
               <button 
                 onClick={(e) => {
                   e.stopPropagation()
@@ -227,33 +227,33 @@ const Contact = () => {
         <div className="grid md:grid-cols-2 gap-8 lg:gap-12">
           {/* Left Side - Content */}
           <div className={`scroll-fade-in ${isVisible ? 'visible' : ''}`}>
-            <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6 leading-tight">
+            <h3 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 md:mb-6 leading-tight text-gray-900">
               NVNS Software Solutions - Best Software Training Institute
             </h3>
-            <p className="text-base md:text-lg text-primary-100 mb-6 md:mb-8 leading-relaxed">
-              NVNS Software Solutions is a leading software training institute providing <strong className="text-white">industry-focused IT courses with real-time project implementation</strong>. Our programs cover <strong className="text-white">Data Engineering, Cloud Computing, Full Stack Development, AI, Cyber Security, DevOps, and Testing</strong>, designed to help students gain practical experience and become job-ready for the modern technology industry.
+            <p className="text-base md:text-lg text-gray-700 mb-6 md:mb-8 leading-relaxed">
+              NVNS Software Solutions is a leading software training institute providing <strong className="text-gray-900">industry-focused IT courses with real-time project implementation</strong>. Our programs cover <strong className="text-gray-900">Data Engineering, Cloud Computing, Full Stack Development, AI, Cyber Security, DevOps, and Testing</strong>, designed to help students gain practical experience and become job-ready for the modern technology industry.
             </p>
             
             <div className="space-y-3 md:space-y-4">
               <div className="flex items-start gap-3">
-                <span className="text-green-400 text-xl md:text-2xl mt-0.5 flex-shrink-0">✔</span>
-                <span className="text-base md:text-lg text-primary-100 leading-relaxed">Real-Time Project Implementation</span>
+                <span className="text-green-500 text-xl md:text-2xl mt-0.5 flex-shrink-0">✔</span>
+                <span className="text-base md:text-lg text-gray-700 leading-relaxed">Real-Time Project Implementation</span>
               </div>
               <div className="flex items-start gap-3">
-                <span className="text-green-400 text-xl md:text-2xl mt-0.5 flex-shrink-0">✔</span>
-                <span className="text-base md:text-lg text-primary-100 leading-relaxed">Industry Experienced Trainers</span>
+                <span className="text-green-500 text-xl md:text-2xl mt-0.5 flex-shrink-0">✔</span>
+                <span className="text-base md:text-lg text-gray-700 leading-relaxed">Industry Experienced Trainers</span>
               </div>
               <div className="flex items-start gap-3">
-                <span className="text-green-400 text-xl md:text-2xl mt-0.5 flex-shrink-0">✔</span>
-                <span className="text-base md:text-lg text-primary-100 leading-relaxed">Hands-On Practical Learning</span>
+                <span className="text-green-500 text-xl md:text-2xl mt-0.5 flex-shrink-0">✔</span>
+                <span className="text-base md:text-lg text-gray-700 leading-relaxed">Hands-On Practical Learning</span>
               </div>
               <div className="flex items-start gap-3">
-                <span className="text-green-400 text-xl md:text-2xl mt-0.5 flex-shrink-0">✔</span>
-                <span className="text-base md:text-lg text-primary-100 leading-relaxed">Job-Oriented Curriculum</span>
+                <span className="text-green-500 text-xl md:text-2xl mt-0.5 flex-shrink-0">✔</span>
+                <span className="text-base md:text-lg text-gray-700 leading-relaxed">Job-Oriented Curriculum</span>
               </div>
               <div className="flex items-start gap-3">
-                <span className="text-green-400 text-xl md:text-2xl mt-0.5 flex-shrink-0">✔</span>
-                <span className="text-base md:text-lg text-primary-100 leading-relaxed">Interview Preparation & Career Guidance</span>
+                <span className="text-green-500 text-xl md:text-2xl mt-0.5 flex-shrink-0">✔</span>
+                <span className="text-base md:text-lg text-gray-700 leading-relaxed">Interview Preparation & Career Guidance</span>
               </div>
             </div>
           </div>
@@ -369,8 +369,8 @@ const Contact = () => {
         )}
 
             {/* Registration Form */}
-            <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 md:p-8">
-              <h3 className="text-xl md:text-2xl font-bold mb-6 text-center">Registration Form</h3>
+            <div className="bg-gray-50 rounded-xl p-6 md:p-8 border border-gray-200">
+              <h3 className="text-xl md:text-2xl font-bold mb-6 text-center text-gray-900">Registration Form</h3>
               {submitMessage.text && (
                 <div className={`mb-4 p-3 md:p-4 rounded-lg text-sm md:text-base ${
                   submitMessage.type === 'success' 
@@ -382,7 +382,7 @@ const Contact = () => {
               )}
               <form onSubmit={handleRegistrationSubmit} className="space-y-4 md:space-y-5">
                 <div>
-                  <label className="block text-sm md:text-base font-semibold text-white mb-2">
+                  <label className="block text-sm md:text-base font-semibold text-gray-800 mb-2">
                     Full Name
                   </label>
                   <input
@@ -392,11 +392,11 @@ const Contact = () => {
                     onChange={handleChange}
                     placeholder="Enter your full name"
                     required
-                    className="w-full px-4 py-3 border-2 border-white/30 rounded-lg bg-white/10 text-white placeholder-white/60 focus:ring-2 focus:ring-white focus:border-white focus:bg-white/20 transition-all"
+                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg bg-white text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm md:text-base font-semibold text-white mb-2">
+                  <label className="block text-sm md:text-base font-semibold text-gray-800 mb-2">
                     Email Address
                   </label>
                   <input
@@ -406,11 +406,11 @@ const Contact = () => {
                     onChange={handleChange}
                     placeholder="Enter your email address"
                     required
-                    className="w-full px-4 py-3 border-2 border-white/30 rounded-lg bg-white/10 text-white placeholder-white/60 focus:ring-2 focus:ring-white focus:border-white focus:bg-white/20 transition-all"
+                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg bg-white text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all"
                   />
                 </div>
                 <div>
-                  <label className="block text-sm md:text-base font-semibold text-white mb-2">
+                  <label className="block text-sm md:text-base font-semibold text-gray-800 mb-2">
                     Phone Number
                   </label>
                   <input
@@ -420,7 +420,7 @@ const Contact = () => {
                     onChange={handleChange}
                     placeholder="Enter your phone number"
                     required
-                    className="w-full px-4 py-3 border-2 border-white/30 rounded-lg bg-white/10 text-white placeholder-white/60 focus:ring-2 focus:ring-white focus:border-white focus:bg-white/20 transition-all"
+                    className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg bg-white text-gray-900 placeholder-gray-400 focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-all"
                   />
                 </div>
                 <button 

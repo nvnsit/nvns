@@ -17,6 +17,7 @@ function Home() {
     <div className="min-h-screen">
       <Header />
       <Hero />
+      <Contact />
       <Stats />
       <section id="courses">
         <FeaturedCourses />
@@ -27,7 +28,6 @@ function Home() {
       <section id="testimonials">
         <Testimonials />
       </section>
-      <Contact />
       <FAQ />
       <Footer />
       <WhatsAppFloat />

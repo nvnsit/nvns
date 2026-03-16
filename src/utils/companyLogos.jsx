@@ -53,3 +53,4 @@ export const CompanyLogo = ({ companyName, className = 'h-8 w-auto object-contai
 
 export default getCompanyLogo
 
+
