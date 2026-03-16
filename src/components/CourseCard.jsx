@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
-import { Star, Clock, Users, Calendar, Share2, TrendingUp } from 'lucide-react'
+import { Star, Clock, Users, Share2, TrendingUp } from 'lucide-react'
 import EnrollmentForm from './EnrollmentForm'
 
 const CourseCard = ({ course, showBatchInfo = false }) => {
@@ -72,25 +72,6 @@ const CourseCard = ({ course, showBatchInfo = false }) => {
             <p className="text-xs sm:text-sm text-gray-600 line-clamp-2 min-h-[2rem] sm:min-h-[2.5rem]">{course.subtitle}</p>
           )}
         </div>
-
-        {/* Batch Info */}
-        {showBatchInfo && course.batchInfo && (
-          <div className="bg-gradient-to-r from-primary-50 via-accent-50 to-primary-50 rounded-xl p-4 mb-5 border-2 border-primary-100 shadow-md group-hover:shadow-lg group-hover:border-primary-300 transition-all duration-300">
-            <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-sm">
-              <div className="flex items-center gap-2 text-gray-700 flex-1 min-w-0">
-                <div className="bg-primary-600 p-1.5 rounded-lg flex-shrink-0">
-                  <Calendar className="h-4 w-4 text-white" />
-                </div>
-                <span className="font-bold truncate">Start: {course.batchInfo.startDate}</span>
-              </div>
-              {course.batchInfo.trainer && (
-                <div className="text-gray-600 font-semibold text-xs sm:text-sm truncate">
-                  by: {course.batchInfo.trainer}
-                </div>
-              )}
-            </div>
-          </div>
-        )}
 
         {/* Description */}
         {course.description && (

@@ -727,9 +727,9 @@ const CareerGuidance = () => {
               </button>
             </div>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center text-primary-100">
-              <a href="tel:+916304576965" className="flex items-center gap-2 hover:text-white transition-colors">
+              <a href="tel:+919032286667" className="flex items-center gap-2 hover:text-white transition-colors">
                 <Phone className="h-5 w-5" />
-                <span>+91 63045 76965</span>
+                <span>9032286667 | 9032856668</span>
               </a>
               <a href="mailto:info@nvnssoftwaresolutions.com" className="flex items-center gap-2 hover:text-white transition-colors">
                 <Mail className="h-5 w-5" />

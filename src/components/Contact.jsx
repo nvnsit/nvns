@@ -131,7 +131,7 @@ const Contact = () => {
     {
       icon: <MessageCircle className="h-6 w-6" />,
       title: 'WhatsApp Chat',
-      value: '+91 63045 76965',
+      value: '9032286667',
       action: 'Chat Now',
       color: 'bg-green-500',
       onClick: () => openWhatsApp()
@@ -139,10 +139,10 @@ const Contact = () => {
     {
       icon: <Phone className="h-6 w-6" />,
       title: 'Call Us',
-      value: '+91 63045 76965',
+      value: '9032286667 | 9032856668',
       action: 'Call Now',
       color: 'bg-blue-500',
-      onClick: () => window.location.href = 'tel:+916304576965'
+      onClick: () => window.location.href = 'tel:+919032286667'
     },
     {
       icon: <Mail className="h-6 w-6" />,

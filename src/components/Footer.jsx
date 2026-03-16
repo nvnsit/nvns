@@ -123,8 +123,8 @@ const Footer = () => {
               <li>
                 <h4 className="text-white font-semibold mb-1">Call Us</h4>
                 <p className="text-sm">
-                  <a href="tel:+916304576965" className="hover:text-white transition-colors">
-                    +91 63045 76965
+                  <a href="tel:+919032286667" className="hover:text-white transition-colors">
+                    9032286667 | 9032856668
                   </a>
                 </p>
               </li>

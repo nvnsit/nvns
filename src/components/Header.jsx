@@ -70,9 +70,9 @@ const Header = () => {
                 <Mail className="h-3 w-3" />
                 <span>info@nvnssoftwaresolutions.com</span>
               </a>
-              <a href="tel:+916304576965" className="flex items-center gap-1 hover:text-primary-200 transition-colors text-xs">
+              <a href="tel:+919032286667" className="flex items-center gap-1 hover:text-primary-200 transition-colors text-xs">
                 <Phone className="h-3 w-3" />
-                <span>+91 63045 76965</span>
+                <span>9032286667 | 9032856668</span>
               </a>
             </div>
           </div>

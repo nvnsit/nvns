@@ -104,14 +104,9 @@ const CourseDetail = () => {
         <div className="container-custom">
           <div className="max-w-4xl mx-auto">
             <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">
-              Batch Details & Schedule
+              Course Schedule
             </h2>
-            <div className="grid md:grid-cols-3 gap-6 mb-8">
-              <div className="bg-primary-50 rounded-xl p-6 text-center">
-                <Clock className="h-8 w-8 text-primary-600 mx-auto mb-3" />
-                <h3 className="font-semibold text-gray-900 mb-2">Next Batch Starts</h3>
-                <p className="text-primary-600 font-bold">{course.nextBatch}</p>
-              </div>
+            <div className="grid md:grid-cols-2 gap-6 mb-8">
               <div className="bg-primary-50 rounded-xl p-6 text-center">
                 <Clock className="h-8 w-8 text-primary-600 mx-auto mb-3" />
                 <h3 className="font-semibold text-gray-900 mb-2">Session Time</h3>
