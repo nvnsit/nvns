@@ -2,15 +2,21 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/png" href="/nvns.png" />
-    <link rel="apple-touch-icon" href="/nvns.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NVNS Software Solutions - Launch Your Tech Career</title>
+    <title>NVNS Software Solutions</title>
+    <script>
+      // Simple SPA fallback for GitHub Pages with custom domain:
+      // On unknown routes, redirect back to the app root (/)
+      (function () {
+        var base = '/';
+        if (location.pathname !== base) {
+          location.replace(base);
+        }
+      })();
+    </script>
   </head>
   <body>
-    <div id="root"></div>
-    <!-- Load the same React bundle as index.html so SPA routes work on refresh -->
-    <script type="module" src="/src/main.jsx"></script>
+    <p>Redirecting to NVNS Software Solutions...</p>
   </body>
   </html>
 
