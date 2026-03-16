@@ -17,17 +17,14 @@ const Header = () => {
 
   // Courses offered by NVNS (kept in sync with marketing content)
   const coursesMenu = [
-    { name: 'Snowflake + Snowpark + DBT', slug: 'snowflake-snowpark-dbt' },
-    { name: 'AWS Data Engineer', slug: 'aws-data-engineer' },
-    { name: 'Java Full Stack', slug: 'java-fullstack' },
-    { name: 'Python Full Stack', slug: 'python-fullstack' },
-    { name: '.NET Full Stack', slug: 'dotnet-fullstack' },
+    { name: 'FullStack Java Development', slug: 'fullstack-java' },
+    { name: 'FullStack Python', slug: 'fullstack-python' },
+    { name: 'Data Science', slug: 'data-science' },
+    { name: 'Gen AI Development', slug: 'gen-ai-development' },
     { name: 'Cyber Security', slug: 'cyber-security' },
-    { name: 'Data Science & AI / Gen AI', slug: 'data-science-ai-genai' },
-    { name: 'Manual & Automation Testing', slug: 'manual-automation-testing' },
-    { name: 'AWS & DevOps', slug: 'aws-devops' },
-    { name: 'Azure Cloud & Azure DevOps', slug: 'azure-cloud-azure-devops' },
-    { name: 'Azure AI & ML', slug: 'azure-ai-ml' },
+    { name: 'AI Testing', slug: 'ai-testing' },
+    { name: 'DevOps & Cloud Engineering', slug: 'devops-cloud-engineering' },
+    { name: 'Quantum Computing', slug: 'quantum-computing' },
   ]
 
   const servicesMenu = [
